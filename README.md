@@ -1,14 +1,15 @@
 # DSH- Plugin Market
 
-这个仓库是一个 DSH 插件市场索引源，目前上架了 [桌宠](packages/desktop-pet)。
+这个仓库是一个 DSH 插件市场索引源，目前上架了 [桌宠](packages/desktop-pet) 和 [dsh-pet](https://github.com/PC2005-cloud/dsh-pet)。
 
 ## 已上架插件
 
 | 插件 | 说明 |
 |---|---|
 | [桌宠](packages/desktop-pet) | 右下角的小鲸灵，会漂浮、眨眼、说话，可拖拽 |
+| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 社区热门的大肥鱼桌宠，100+ 透明动画，支持桌面透明窗 |
 
-桌宠的索引条目由 `scripts/update-market.mjs` 自动写入，`commit` 指向包含插件包的 Git 提交。
+桌宠的索引条目由 `scripts/update-market.mjs` 自动写入，`commit` 指向包含插件包的 Git 提交；`dsh-pet` 使用 npm 来源，直接引用已发布版本。
 
 ## 市场地址
 
