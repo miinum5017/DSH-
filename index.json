@@ -1,0 +1,12 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH- Market",
+    "zh": "DSH- 插件市场"
+  },
+  "description": {
+    "en": "Plugins published from the DSH- repository.",
+    "zh": "从 DSH- 仓库发布的 DSH 插件。"
+  },
+  "plugins": []
+}
