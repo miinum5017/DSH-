@@ -11,7 +11,11 @@ const index = JSON.parse(fs.readFileSync(indexPath, 'utf8'))
 
 if (index.format !== 1) throw new Error('index.json format must be 1')
 
-const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
+const commit = (
+  process.argv[2] ||
+  process.env.GIT_COMMIT ||
+  execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
+).trim()
 if (!/^[0-9a-f]{40}$/.test(commit)) throw new Error(`invalid git commit: ${commit}`)
 
 const existing = index.plugins.find((plugin) => plugin.name === pkg.name)

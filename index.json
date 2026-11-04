@@ -8,5 +8,48 @@
     "en": "Plugins published from the DSH- repository.",
     "zh": "从 DSH- 仓库发布的 DSH 插件。"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "@miinum5017/dsh-plugin-desktop-pet",
+      "title": {
+        "en": "Desktop Pet",
+        "zh": "桌宠"
+      },
+      "description": {
+        "en": "A tiny whale that floats in the corner, blinks, talks and follows your drag.",
+        "zh": "一只待在右下角的小鲸灵：会漂浮、眨眼、说话，还能拖着换位置。"
+      },
+      "icon": "./packages/desktop-pet/icon.svg",
+      "author": "miinum5017",
+      "homepage": "https://github.com/miinum5017/DSH-/tree/main/packages/desktop-pet",
+      "repository": {
+        "url": "https://github.com/miinum5017/DSH-",
+        "directory": "packages/desktop-pet"
+      },
+      "metadata": {
+        "keywords": [
+          "desktop pet",
+          "pet",
+          "whale",
+          "decoration",
+          "桌宠"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793786969,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/miinum5017/DSH-",
+            "commit": "bee46cdaf04418c8dafa4c44e9391c3d77e02c13",
+            "path": "packages/desktop-pet"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
 }
